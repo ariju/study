@@ -1,0 +1,164 @@
+/* body共通 */
+body {
+  margin: 0;
+}
+
+/* ヘッダーここから */
+header {
+  background: red;
+  height: 100px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header_title {
+  height: 50px;
+  width: 100px;
+  background: black;
+}
+
+header nav {
+  height: 50px;
+  width: 400px;
+  background: black;
+}
+
+/* fvここから */
+.firstview {
+  background: blue;
+  height: 300px;
+  display: flex;
+}
+
+.firstview .firstview_title {
+  background: black;
+  margin: auto;
+  height: 40px;
+  width: 400px;
+}
+
+/* 自己紹介ここから */
+.aboutme {
+  background: green;
+  height: 100px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutme .aboutme_title {
+  background: black;
+  height: 50px;
+  width: 250px;
+}
+
+.aboutme .aboutme_second {
+  background: black;
+  height: 50px;
+  width: 250px;
+}
+
+/* スキルここから */
+.skill {
+  background: gray;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill .skill_top {
+  background: black;
+  height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.skill .skill_second {
+  background: black;
+  height: 300px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* 作品ここから */
+.works {
+  background: yellow;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.works .works_title {
+  height: 50px;
+  background: black;
+  margin: 20px;
+}
+
+.works .works_second {
+  background: black;
+  height: 300px;
+  margin: 20px;
+}
+
+/* 経歴ここから */
+.timeline {
+  background: pink;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline .timeline_title {
+  background: black;
+  height: 50px;
+  margin: 20px;
+}
+
+.timeline .timeline_second {
+  background: black;
+  height: 300px;
+  margin: 20px;
+}
+
+/* 問合せここから */
+.contack {
+  background: skyblue;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contack .contack_title {
+  background: black;
+  height: 20px;
+  margin: 10px;
+}
+
+.contack .contack_second {
+  background: black;
+  height: 300px;
+  margin: 20px;
+}
+
+/* フッターここから */
+footer {
+  background: navy;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer_title {
+  background: black;
+  width: 300px;
+  height: 20px;
+  margin: 10px auto;
+}
+
+footer .footer_second {
+  margin: 0 auto;
+}
