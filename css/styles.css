@@ -150,6 +150,7 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: space-between;
   letter-spacing: 2px;
+  color: #000000;
 }
 
 .aboutme .aboutme_title img{
@@ -202,25 +203,91 @@ header nav ul li a:hover {
 
 /* スキルここから */
 .skill {
-  background: gray;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  background: #f9f9f9;
+  padding: 70px 5%;
+  font-weight: bold;
+  font-family: "Arial", "メイリオ";
+  color: #000000;
 }
 
 .skill .skill_top {
-  background: black;
-  height: 50px;
-  width: 80%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-bottom: 40px;
+  display: block;
+  margin: 33px 0;
+}
+
+.skill .skill_top h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .skill .skill_second {
-  background: black;
-  height: 300px;
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
+  background-color: #fff;
+}
+
+.skill .skill_second table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.skill .skill_second table tr {
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.skill .skill_second table tr:hover {
+  background-color: #d4f0fd;
+}
+
+.skill .skill_second table th,
+.skill .skill_second table td {
+  text-align: center;
+  width: 20%;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.skill .skill_second table td {
+  background-size: 25px;
+  background-position: left 70px center;
+  background-repeat: no-repeat;
+}
+
+.skill .skill_second table td.html {
+  background-image: url("../img/html-5.png");
+}
+
+.skill .skill_second table td.css {
+  background-image: url("../img/css-3.png");
+}
+
+.skill .skill_second table td.js {
+  background-image: url("../img/javascript.png");
+}
+
+.skill .skill_second table td.vuejs {
+  background-image: url("../img/vue.png");
+}
+
+.skill .skill_second table td.nuxtjs {
+  background-image: url("../img/nuxt-icon.png");
+}
+
+.skill .skill_second table td.firebase {
+  background-image: url("../img/firebase.png");
+}
+
+.skill .skill_second table td.nodejs {
+  background-image: url("../img/nodejs.png");
 }
 
 /* 作品ここから */
