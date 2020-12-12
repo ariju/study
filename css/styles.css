@@ -116,7 +116,9 @@ header nav ul li a:hover {
 .firstview {
   height: 664px;
   display: flex;
-  background-image: url("../img/1stview.png");
+  width: 100%;
+  background-size: cover;
+  background-image: url("../img/1stview.png") ;
 }
 
 .firstview .firstview_title {
@@ -142,24 +144,60 @@ header nav ul li a:hover {
 
 /* 自己紹介ここから */
 .aboutme {
-  background: green;
-  height: 100px;
-  padding: 0 50px;
+  height: 477px;
+  padding: 70px 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  letter-spacing: 2px;
 }
 
-.aboutme .aboutme_title {
-  background: black;
-  height: 50px;
-  width: 250px;
+.aboutme .aboutme_title img{
+  height: 333px;
+  width: 536px;
+  border-radius: 10px;
 }
 
 .aboutme .aboutme_second {
-  background: black;
-  height: 50px;
-  width: 250px;
+  height: 333px;
+  width: 49%;
+  font-size: 16px;
+  line-height: 18px;
+
+}
+
+.aboutme .aboutme_second h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 23px;
+  font-weight: 300;
+  font-family: Arial, "メイリオ";
+  font-style: normal;
+  margin-top: 5px
+}
+
+.aboutme .aboutme_second p {
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  font-family: Arial, "メイリオ";
+  font-style: normal;
+}
+
+.aboutme .aboutme_second ul {
+  list-style: none;
+  display: flex;
+  margin-top: 40px;
+}
+
+.aboutme .aboutme_second ul li a {
+  transition: all 0.3s ease 0s;
+  padding-right: 20px;
+}
+
+.aboutme .aboutme_second ul li a:hover {
+  fill: #e65f78;
 }
 
 /* スキルここから */
