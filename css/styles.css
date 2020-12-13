@@ -292,22 +292,75 @@ header nav ul li a:hover {
 
 /* 作品ここから */
 .works {
-  background: yellow;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+  background: white;
+  padding: 70px 5%;
+  font-family: Arial, "メイリオ";
+  color: #000000;
 }
 
 .works .works_title {
-  height: 50px;
-  background: black;
-  margin: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
-.works .works_second {
-  background: black;
-  height: 300px;
-  margin: 20px;
+.works .works_title h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-top: 33px;
+}
+
+.works ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  margin: 16px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.works ul li {
+  border: 2px solid #dcdcdc;
+  margin-bottom: 20px;
+  width: 32%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.works ul li img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.works ul li .works_top {
+  padding: 10px 20px;
+}
+
+.works ul li h3 {
+  font-size: 19px;
+}
+
+.works ul li h3 span a{
+  font-size: 12px;
+  color: #0000EE;
+  display: inline-block;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #0000EE;
+}
+
+.works ul li .works_top p {
+  font-size: 14px;
+  margin: 14px 0;
+}
+
+.works ul li .works_top
+.works_second {
+  text-align: right;
+  font-size: 20px;
 }
 
 /* 経歴ここから */
