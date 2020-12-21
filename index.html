@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>study</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
     <!-- ヘッダーここから -->
@@ -179,24 +180,93 @@
 
     <!-- 経歴ここから -->
     <div class="timeline">
-      <div class="timeline_title"></div>
-      <div class="timeline_second"></div>
+
+      <div class="timeline_title">
+        <h2>経歴</h2>
+      </div>
+
+      <div class="timeline_content">
+
+        <div class="timeline_line">
+          <div class="content_box content_first">
+            <h4>2015.4 - 2016.4</h4>
+            <h5>Webマーケティング</h5>
+            <p>Webマーケティングをしていました。Webマーケティングをしていました。
+              Webマーケティングをしていました。Webマーケティングをしていました。
+              Webマーケティングをしていました。
+            </p>
+          </div>
+        <div class="timeline_yoko"></div>
+      </div>
+
+        <div class="timeline_line">
+          <div class="content_box content_second">
+            <h4>2016.5 - 2018.4</h4>
+            <h5>カスタマーサクセス</h5>
+            <p>CSをしていました。CSをしていました。CSをしていました。
+              CSをしていました。CSをしていました。CSをしていました。
+              CSをしていました。CSをしていました。CSをしていました。
+              CSをしていました。CSをしていました。
+            </p>
+          </div>
+        <div class="timeline_yoko"></div>
+      </div>
+
+        <div class="timeline_line">
+          <div class="content_box content_third">
+            <h4>2018.4 - 現在</h4>
+            <h5>プログラミング学習中</h5>
+            <p>プログラミング学習中です。こんな風になりたいです。
+              プログラミング学習中です。こんな風になりたいです。
+              プログラミング学習中です。こんな風になりたいです。
+              プログラミング学習中です。こんな風になりたいです。
+            </p>
+          </div>
+          <div class="timeline_yoko"></div>
+        </div>
+      </div>
     </div>
     <!-- 経歴ここまで -->
 
     <!-- フォームここから -->
-    <div class="contack">
-      <div class="contack_title"></div>
-      <div class="contack_second"></div>
+    <div class="contact">
+      <div class="contact_title">
+        <h2>お問い合わせ</h2>
+        <p>
+          下記のお問い合わせフォームかツイッターの
+            DMでご連絡ください。
+          </p>
+      </div>
+      <form>
+        <label for="text_id">お名前 (漢字)*</label>
+        <input type="text" name="name" id="text_id" />
+        <label for="kana">お名前 (フリガナ)*</label>
+        <input type="text" name="kana" value="">
+        <label for="email">メールアドレス*</label>
+        <input type="text" name="email" value="">
+        <label for="message">メッセージ*</label>
+        <textarea id="message" name="message" cols="40" rows="8" maxlength="20"></textarea>
+        <label for="agreeement"><a href="#">利用規約</a>に同意しますか？★</label>
+        <div class="checkbox">
+          <input class="check" type="checkbox" id="agreeement">
+        </div>
+        <button>Send</button>
+      </form>
     </div>
     <!-- フォームここまで -->
 
     <!-- フッターここから -->
     <footer>
-      <div class="footer_title"></div>
-      <div class="footer_second">
-        Katsuya Masaka © 2020. All Right Reserved,
-      </div>
+      <ul>
+        <li>
+          <a href="#">
+          <p><i class="fab fa-twitter-square  my-example fa-3x"></i></p>
+          <p><i class="fab fa-github-square my-example fa-3x"></i></p>
+          </a>
+        </li>
+      </ul>
+      <p>Katsuya Masaka © 2020. All Right Reserved,</p>
+      
     </footer>
     <!-- フッターここまで -->
   </body>

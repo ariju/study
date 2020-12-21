@@ -48,10 +48,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-a {
-	color:#474747;
-	text-decoration:none;
-}
+
 
 
 /* micro clearfix */
@@ -301,6 +298,7 @@ header nav ul li a:hover {
 .works .works_title {
   margin: 0 auto;
   margin-bottom: 40px;
+  height: 40px;
 }
 
 .works .works_title h2 {
@@ -365,59 +363,245 @@ header nav ul li a:hover {
 
 /* 経歴ここから */
 .timeline {
-  background: pink;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+  background: #f9f9f9;
+  padding: 70px 5%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .timeline .timeline_title {
-  background: black;
-  height: 50px;
-  margin: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-.timeline .timeline_second {
-  background: black;
-  height: 300px;
-  margin: 20px;
+.timeline .timeline_title h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
+
+.timeline_line {
+  display: flex;
+  border-right: 2px dashed #cfcdcd;
+  position: relative;
+}
+
+.content_box {
+  padding-right: 10px;
+  width: 80%;
+  height: auto;
+}
+
+.timeline_yoko {
+  width: 110px;
+  height: 62px;
+  border-bottom: 2px dashed #cfcdcd;
+}
+
+.timeline_line:nth-child(2) {
+  margin-left: auto;
+  border-left: 2px dashed #cfcdcd;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: left;
+  border-right: none;
+  position: relative;
+  left: 2px;
+}
+
+.timeline_line:nth-child(2) h5 {
+  text-align: left;
+  padding: 10px 0 0 10px;
+}
+
+.timeline_line:nth-child(2) h4 {
+  text-align: left;
+  padding: 10px 0 0 10px;
+}
+
+.timeline_line:nth-child(2) p {
+  text-align: left;
+  padding: 10px 0 0 10px;
+}
+
+.content_second {
+  text-align: left;
+}
+
+.timeline_content 
+.timeline_line {
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+.content_box h4 {
+  font-size: 14px;
+  color: #e65f78;
+  margin-bottom: 40px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.content_box h5 {
+  font-size: 22px;
+  color: #000000;
+  text-align: right;
+  margin-bottom: 23px;
+  font-weight: 500;
+}
+
+.content_box h5:hover {
+  color:  #e65f78;
+}
+
+.content_box p {
+  font-size: 16px;
+  color: #748182;
+  line-height: 26px;
+  text-align: right;
+}
+
+.content_box:hover {
+  border: 2px dashed #cfcdcd;
+}
+
+.timeline_line:first-child::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #cfcdcd;
+  box-sizing: content-box;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 2px #cfcdcd;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -11px;
+  top: -10px;
+}
+
+.timeline_line:last-child::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #cfcdcd;
+  box-sizing: content-box;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 2px #cfcdcd;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -11px;
+  bottom: 0px;
+}
+
 
 /* 問合せここから */
-.contack {
-  background: skyblue;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+.contact {
+  padding: 70px 5%;
+  width: 40%;
+  margin: 0 auto;
+  color: #000000;
 }
 
-.contack .contack_title {
-  background: black;
+.contact_title {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.contact_title h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 33px 0;
+  
+}
+
+.contact_title p {
+  text-align: center;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.check {
+  width: 20px;
   height: 20px;
-  margin: 10px;
+  position: absolute;
+  left: 120px;
+  top: 10px;
 }
 
-.contack .contack_second {
-  background: black;
-  height: 300px;
-  margin: 20px;
+.contact form input {
+  width: 100%;
+  height: 50px;
+  background: #e9cdc1;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  border-style: none;
 }
+
+.contact .check {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 220px;
+  top: -22px; 
+}
+
+#message {
+  background: #e9cdc1;
+  border-style: none;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 16px;
+  display: block;
+  margin: 40px auto;
+  width: 50%;
+  border-radius: 30px;
+  background: black;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-style: none;
+}
+
+button:hover {
+  background: pink;
+}
+
 
 /* フッターここから */
 footer {
-  background: navy;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-}
-
-footer .footer_title {
+  padding: 40px 0;
+  height: auto;
   background: black;
-  width: 300px;
-  height: 20px;
-  margin: 10px auto;
 }
 
-footer .footer_second {
-  margin: 0 auto;
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
 }
+
+footer ul li a {
+  display: flex;
+  justify-content: center;
+  color: #551a8b;
+}
+
+footer ul li a p {
+  margin: 0 10px 10px 10px;
+}
+
+footer ul li a p:hover {
+  color: pink;
+}
+
+
+
