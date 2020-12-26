@@ -77,6 +77,57 @@ header {
   align-items: center;
 }
 
+.sp-menu {
+  margin-left: auto;
+  padding: 0 16px;
+}
+
+.sp-menu #up {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.sp-menu #up.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 0 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #fold {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  margin-top: 24px;
+}
+
 header .header_title {
   height: 37px;
   font-weight: bold;
@@ -347,7 +398,6 @@ header nav ul li a:hover {
   color: #0000EE;
   display: inline-block;
   padding: 10px 0 0 0;
-  border-bottom: 1px solid #0000EE;
 }
 
 .works ul li .works_top p {
@@ -359,6 +409,63 @@ header nav ul li a:hover {
 .works_second {
   text-align: right;
   font-size: 20px;
+}
+
+#open, #close {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0;
+  margin: 5px auto 0;
+}
+
+#open {
+  text-decoration: underline dotted;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  transition: transform 1s ease-in-out ;
+  z-index: 2;
+}
+
+#modal p {
+  margin: 20px 0 20px;
+}
+
+#close {
+  text-align: right;
+  display: inline-block;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+
+
+
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate( 0, -500px);
 }
 
 /* 経歴ここから */

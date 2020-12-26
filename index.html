@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>study</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- ヘッダーここから -->
@@ -22,9 +23,23 @@
           <li><a href="#">お問い合わせ</a></li>
         </ul>
       </nav>
+      <div class="sp-menu">
+        <span class="material-icons" id="up">menu</span>
+      </div>
     </header>
-    <!-- ヘッダーここまで -->
 
+    <div class="overlay">
+      <span class="material-icons" id="fold">close</span>
+      <nav>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ヘッダーここまで -->
+    
     <!-- fvここから -->
     <div class="firstview">
       <div class="firstview_title">
@@ -152,6 +167,24 @@
               <p>HTML/CSS</p>
               <p>HTML/CSSで自己紹介サイトの制作をしました。CSSでモーダルウィンドウを実装しました。</p>
               <p class="works_second">#01</p>
+              <div id="open">
+                詳細を見る
+              </div>
+
+              <div id="mask" class="hidden">
+
+              <div id="modal" class="hidden">
+                <div id="close">
+                  X
+                </div>
+                <div class="name">
+                  制作物１
+                </div>
+                <p>これはこんな作品です。これはこんな作品です。これはこんな作品です。
+                  これはこんな作品です。これはこんな作品です。これはこんな作品です。
+                  これはこんな作品です。これはこんな作品です。これはこんな作品です。
+                </p>
+              </div>
             </div>
           </li>
 
@@ -269,5 +302,6 @@
       
     </footer>
     <!-- フッターここまで -->
+    <script src="js/main.js"></script>
   </body>
 </html>
